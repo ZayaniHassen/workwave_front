@@ -1,0 +1,62 @@
+<!-- @@ Category Modal @e -->
+<div class="modal fade" id="modalCreate">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <a href="#" class="close" data-bs-dismiss="modal" aria-label="Close"> <em
+                    class="icon ni ni-cross-sm"></em></a>
+            <div class="modal-body modal-body-md">
+                <h5 class="title">Add Project</h5>
+                <form [formGroup]="taskProject" action="#" class="pt-2">
+                    <div class="form-group">
+                        <label for="projectname" class="form-label">Project Name</label>
+                        <div class="form-control-wrap">
+                            <input type="text" formControlName="projectname" class="form-control" id="projectname"
+                                rows="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateEmission" class="form-label">Date Debut</label>
+                        <div class="form-control-wrap">
+                            <input formControlName="dateEmission" type="date" class="form-control" id="dateEmission">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateExpiration" class="form-label">Date Fin</label>
+                        <div class="form-control-wrap">
+                            <input formControlName="dateExpiration" type="date" class="form-control"
+                                id="dateExpiration">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="etat" class="form-label">Etat</label>
+                        <div class="form-control-wrap">
+                          <select formControlName="etat" class="form-control" id="etat">
+                            <option value="" selected disabled>Choose an option</option>
+                            <option value="active">Active</option>
+                            <option value="inactive">Inactive</option>
+                          </select>
+                        </div>
+                      </div>
+                    <div class="form-group">
+                        <label for="description" class="form-label">Description</label>
+                        <div class="form-control-wrap">
+                            <textarea formControlName="description" class="form-control" id="description"
+                                rows="3"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="user" class="form-label">User</label>
+                        <div class="form-control-wrap">
+                            <textarea class="form-control" id="user" rows="3"></textarea>
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <button (click)="  addProject()" data-bs-dismiss="modal" type="submit"
+                            class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
