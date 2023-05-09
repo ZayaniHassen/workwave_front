@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/1de55303-55a9-4370-9dbc-86e06d553db6/resourceGroups/workwaveapp_group/providers/Microsoft.Web/sites/workwavefront",
+    "appService.deploySubpath": "."
+}
